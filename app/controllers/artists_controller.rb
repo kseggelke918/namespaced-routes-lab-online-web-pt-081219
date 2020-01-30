@@ -8,6 +8,7 @@ class ArtistsController < ApplicationController
   end
 
   def new
+    if Preferences.all_create_
     @artist = Artist.new
   end
 
